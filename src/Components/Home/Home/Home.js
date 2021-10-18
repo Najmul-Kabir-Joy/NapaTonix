@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useDoctors from '../../../Hooks/useDoctors';
 import useServices from '../../../Hooks/useServices';
 import Doctor from '../../Doctors/Doctor/Doctor';
@@ -23,7 +24,7 @@ const Home = () => {
                         services?.slice(0, 6).map((service) => <ServiceCard key={service.id} service={service}></ServiceCard>)
                     }
                 </Row>
-                <p className='text-end mt-3'>See All</p>
+                <Link to='/services'><p className='text-end mt-3'>See All</p></Link>
             </Container>
             <WhyUs></WhyUs>
             <Container className='my-5'>
@@ -33,7 +34,7 @@ const Home = () => {
                         doctors?.slice(0, 6).map((doctor) => <Doctor key={doctor.id} doctor={doctor}></Doctor>)
                     }
                 </Row>
-                <p className='text-end mt-3'>See All</p>
+                <Link to='/doctors'><p className='text-end mt-3'>See All</p></Link>
             </Container>
             <NewsTeller></NewsTeller>
             <Partner></Partner>

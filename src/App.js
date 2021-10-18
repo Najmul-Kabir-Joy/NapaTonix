@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AboutUs from './Components/AboutUs/AboutUs';
+import AuthProvider from './Components/Context/AuthProvider';
 import Doctors from './Components/Doctors/Doctors/Doctors';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home/Home';
@@ -23,33 +24,35 @@ function App() {
         <input onBlur={getName} type="text" placeholder='name' id='name' />
         <button type="submit" onClick={clearInputs}>Submit<i className="fas fa-space-shuttle"></i></button>
       </form> */}
-      <BrowserRouter>
-        <Topbar></Topbar>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/aboutus">
-            <AboutUs></AboutUs>
-          </Route>
-          <Route path='/services'>
-            <Services></Services>
-          </Route>
-          <Route path='/doctors'>
-            <Doctors></Doctors>
-          </Route>
-          <Route path='/login'>
-            <Login></Login>
-          </Route>
-          <Route path='/signup'>
-            <SignUp></SignUp>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Topbar></Topbar>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/aboutus">
+              <AboutUs></AboutUs>
+            </Route>
+            <Route path='/services'>
+              <Services></Services>
+            </Route>
+            <Route path='/doctors'>
+              <Doctors></Doctors>
+            </Route>
+            <Route path='/login'>
+              <Login></Login>
+            </Route>
+            <Route path='/signup'>
+              <SignUp></SignUp>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
       {/* <DoctorDetails></DoctorDetails> */}
     </div>
   );
