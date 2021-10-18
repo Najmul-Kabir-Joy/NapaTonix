@@ -1,36 +1,57 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const DoctorDetails = () => {
+    const [doctors, setDoctors] = useState([]);
+    useEffect(() => {
+        fetch('/doctors.json')
+            .then(res => res.json())
+            .then(data => {
+                setDoctors(data)
+            });
+    }, [])
+    const { doctorId } = useParams();
+    const matched = doctors.find(d => d.id == doctorId);
+    console.log(matched);
     return (
-        <Container>
-            <Row xs={1} md={2} className="g-4">
-                <Col>
-                    <img src="" alt="" />
-                </Col>
-                <Col>
-                    <h3>Name, degree</h3>
-                    <small>Depts</small>
-                    <p>Description</p>
-                    <div>
+        <div>
+            <h1 className='my-5'>About {matched?.doctor_name}</h1>
+            <Container className='m-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Row xs={1} md={3} className="g-4">
+                    <Link to='/doctors'><i className="fas fa-hand-point-left "></i> back</Link>
+
+                    <Col>
+                        <br />
+                        <img src={matched?.doctor_img} alt="" />
+                    </Col>
+                    <Col className='text-start' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div>
-                            <i className="far fa-envelope"></i>
-                            <p>Email</p>
+                            <h3>{matched?.doctor_name}, {matched?.degree}</h3>
+                            <h5><i>{matched?.special_in}</i></h5>
+                            <p>{matched?.description}</p>
+                            <div style={{ fontSize: '1.1em' }}>
+                                <div>
+                                    <i className="far fa-envelope me-3"></i>
+                                    {matched?.email}
+                                </div>
+                                <div>
+                                    <i className="fas fa-phone me-3 mt-2 mb-4"></i>
+                                    {matched?.phone}
+                                </div>
+                            </div>
+                            <div style={{ fontSize: '1.5em', marginTop: '10px' }}>
+                                <i className="fab fa-facebook me-4"></i>
+                                <i className="fab fa-twitter me-4"></i>
+                                <i className="fab fa-instagram me-4"></i>
+                                <i className="fab fa-linkedin me-4"></i>
+                            </div>
                         </div>
-                        <div>
-                            <i className="fas fa-phone"></i>
-                            <p>Phone</p>
-                        </div>
-                    </div>
-                    <div>
-                        <i className="fab fa-facebook"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                </Col>
-            </Row>
-        </Container>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     );
 };
 

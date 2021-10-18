@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Doctor = (props) => {
     const { doctor } = props;
-    const { doctor_name, special_in, doctor_img, degree } = doctor;
+    const { id, doctor_name, special_in, doctor_img, degree } = doctor;
     return (
         <Col>
             <Card>
@@ -13,6 +14,11 @@ const Doctor = (props) => {
                     <small>{degree}</small>
                     <Card.Text className='fw-bold h6'>
                         {special_in}
+                    </Card.Text>
+                    <Card.Text className='text-end'>
+                        <Link to={`/doctor/${id}`}>
+                            <i className="fas fa-info-circle h3 text-end"></i>
+                        </Link>
                     </Card.Text>
                 </Card.Body>
             </Card>

@@ -19,7 +19,7 @@ const Services = () => {
                     </Form.Group>
                 </Form>
 
-                <Row xs={1} md={4} className="g-5">
+                <Row xs={1} md={3} className="g-5">
                     {
                         searchProducts?.map(service => <ServiceCard key={service.id} service={service}></ServiceCard>)
                     }
