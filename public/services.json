@@ -1,0 +1,278 @@
+[
+    {
+        "id": 1,
+        "service_name": "PLASTIC SURGERY",
+        "service_img": "https://i.ibb.co/HPhx0Rf/Tiny-cosmetic-surgeons-drawing-marks-on-huge-female-face-holding-lab-tubes-and-syringe-for-injection.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 2,
+        "service_name": "HEMATOLOGY",
+        "service_img": "https://i.ibb.co/pRF9Pmd/Chemical-blood-analysis-Clinical-experiment-disease-detection-plasma-diagnostics-Hematology-clinic-m.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 3,
+        "service_name": "NEUROLOGY",
+        "service_img": "https://i.ibb.co/3M5DRpg/neurology.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 4,
+        "service_name": "GASTROLOGIC",
+        "service_img": "https://media.istockphoto.com/vectors/stomach-health-medical-illustration-vector-id1217056895?k=20&m=1217056895&s=612x612&w=0&h=pmZvI0iuChaQ9Idzhrl0BW6kqd3TbPxWMi6CRf9Q_is=",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 5,
+        "service_name": "ORTHOPEDIC",
+        "service_img": "https://i.ibb.co/Cbzr9fF/Woman-with-injured-broken-leg-in-plaster-cast-sitting-in-doctor-office-taking-X-ray-and-crutch-Vecto.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 6,
+        "service_name": "PHARMACOLOGY",
+        "service_img": "https://i.ibb.co/hdF9B0g/Pharmaceutical-drug-products-manufactured-from-biological-sources-Biopharmacology-products-biologica.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 7,
+        "service_name": "DERMATOLOGY",
+        "service_img": "https://i.ibb.co/pRnkt7Z/Tiny-dermatologist-examining-dry-face-skin-flat-vector-illustration-Abstract-epidermis-disease-diagn.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 8,
+        "service_name": "CARDIOLOGY",
+        "service_img": "https://i.ibb.co/2FHZB5j/Cardiologists-examining-heart-with-stethoscope-and-blood-samples-in-lab-tubes-among-pills-and-heartb.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 9,
+        "service_name": "PULMONOLOGY",
+        "service_img": "https://i.ibb.co/cLn05Jk/Respiratory-Medicine-Pulmonology-Healthcare-Concept-Doctors-Check-Human-Tuberculosis-or-Pneumonia-Lu.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 10,
+        "service_name": "RADIOLOGY",
+        "service_img": "https://i.ibb.co/Yjfw6bS/Set-of-doctors-operating-medical-equipment-examining-patients-Diagnostic-MRI-tomograph-ultrasound-sc.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 11,
+        "service_name": "DIABETOLOGY",
+        "service_img": "https://i.ibb.co/zRhPVQN/Diabetes-mellitus-Blood-sugar-level-measuring-tool-medical-equipment-diabetology-idea-design-element.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    },
+    {
+        "id": 12,
+        "service_name": "GYNAECOLOGY",
+        "service_img": "https://i.ibb.co/PY7y8y7/gayneacology.jpg",
+        "description": {
+            "short_des": "Our Project manager adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "facilities": [
+                "Standards of Treatment",
+                "Well Communication",
+                "Infection Prevention",
+                "25+ Years Experience"
+            ],
+            "keypoints": [
+                "Routine and medical care",
+                "Excellence in Healthcare every",
+                "Building a healthy environment.",
+                "Routine and medical care",
+                "Excellence in Healthcare every"
+            ]
+        },
+        "available_specialists": 5,
+        "doctors": 15
+    }
+]
