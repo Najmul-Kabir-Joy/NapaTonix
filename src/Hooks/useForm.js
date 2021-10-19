@@ -24,11 +24,11 @@ const useForm = () => {
         emailSignIn(email, pass);
     }
     const clearInputs = () => {
-        if (email.length > 0) {
-            document.getElementById('email').value = '';
-            document.getElementById('pass').value = '';
-            document.getElementById('name').value = '';
-        }
+        // if (email.length > 0) {
+        //     document.getElementById('email').value = '';
+        //     document.getElementById('pass').value = '';
+        //     document.getElementById('name').value = '';
+        // }
     }
     return {
         getEmail,

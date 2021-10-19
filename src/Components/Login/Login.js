@@ -1,12 +1,24 @@
 import React from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../Hooks/useFirebase';
 import useForm from '../../Hooks/useForm';
+import { useHistory, useLocation } from 'react-router-dom'
+import useAuth from '../../Hooks/useAuth';
 
 const Login = () => {
     const { emailLogin, getEmail, getPass, clearInputs } = useForm();
-    const { googleSignIn, error } = useFirebase();
+    const { googleSignIn, error, successAlert } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirectUrl = location.state?.from || '/home';
+
+    const handlegoogleSignIn = () => {
+        googleSignIn()
+            .then(res => {
+                successAlert();
+                history.push(redirectUrl);
+            })
+    }
 
     return (
         <Container className='lg-p-5 sm-p-0 my-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -41,7 +53,7 @@ const Login = () => {
                     <Button variant='outline-primary' className='mt-3 mb-3' type='submit' onClick={clearInputs}>LOGIN <i class="fas fa-sign-in-alt"></i></Button><br />
                     {<p>{error}</p>}
                     <p>More Login Options</p>
-                    <Button variant='outline-primary' className='mt-1' onClick={googleSignIn}><i className="fab fa-google"></i> LOGIN USING GOOGLE</Button>
+                    <Button variant='outline-primary' className='mt-1' onClick={handlegoogleSignIn}><i className="fab fa-google"></i> LOGIN USING GOOGLE</Button>
                     <br />
                     <Button variant='outline-primary' className='mt-3'><i className="fab fa-facebook"></i> LOGIN USING FACEBOOK</Button>
                     <br />

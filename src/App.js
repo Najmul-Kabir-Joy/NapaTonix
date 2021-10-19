@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home/Home';
 import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Components/Services/ServiceDetails/ServiceDetails';
 import Services from './Components/Services/Services/Services';
 import SignUp from './Components/SignUp/SignUp';
@@ -17,16 +18,6 @@ import Topbar from './Components/Topbar/Topbar';
 function App() {
   return (
     <div className="App">
-      {/* <button onClick={googleSignIn}>google sign in</button>
-      <button onClick={logOut}>logout</button>
-      <p>{displayName}</p>
-      <p>{error}</p>
-      <form onSubmit={handleRegistration}>
-        <input onBlur={getEmail} type="email" id='email' />
-        <input onBlur={getPass} type="password" id='pass' />
-        <input onBlur={getName} type="text" placeholder='name' id='name' />
-        <button type="submit" onClick={clearInputs}>Submit<i className="fas fa-space-shuttle"></i></button>
-      </form> */}
       <AuthProvider>
         <BrowserRouter>
           <Topbar></Topbar>
@@ -43,15 +34,15 @@ function App() {
             <Route path='/services'>
               <Services></Services>
             </Route>
-            <Route path='/service/:serviceId'>
+            <PrivateRoute path='/service/:serviceId'>
               <ServiceDetails></ServiceDetails>
-            </Route>
+            </PrivateRoute>
             <Route path='/doctors'>
               <Doctors></Doctors>
             </Route>
-            <Route path='/doctor/:doctorId'>
+            <PrivateRoute path='/doctor/:doctorId'>
               <DoctorDetails></DoctorDetails>
-            </Route>
+            </PrivateRoute>
             <Route path='/login'>
               <Login></Login>
             </Route>
@@ -65,7 +56,6 @@ function App() {
           <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
-      {/* <DoctorDetails></DoctorDetails> */}
     </div>
   );
 }

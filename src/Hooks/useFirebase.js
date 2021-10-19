@@ -24,15 +24,8 @@ const useFirebase = () => {
     }
     const auth = getAuth();
     const googleSignIn = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(res => {
-                setUser(res.user)
-                successAlert();
-            })
-            .catch(err => {
-                setError(err.message)
-                failAlert()
-            })
+        return signInWithPopup(auth, googleProvider)
+
     };
 
     const setUserName = (name) => {
@@ -84,6 +77,7 @@ const useFirebase = () => {
         googleSignIn,
         createUser,
         emailSignIn,
+        setUser,
         logOut,
         setUserName,
         successAlert,
