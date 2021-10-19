@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import firebaseInit from '../Firebase/firebase.init';
-import { getAuth, signInWithPopup, signOut, onAuthStateChanged, updateProfile, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider } from 'firebase/auth';
+import { getAuth, signInWithPopup, signOut, onAuthStateChanged, updateProfile, createUserWithEmailAndPassword, FacebookAuthProvider, signInWithEmailAndPassword, GoogleAuthProvider } from 'firebase/auth';
 import Swal from 'sweetalert2'
 
 firebaseInit()
 const useFirebase = () => {
     const [users, setUser] = useState({});
     const [error, setError] = useState('');
+    const [isLoding, setIsLoading] = useState(true);
     const googleProvider = new GoogleAuthProvider();
+    const facebookProvider = new FacebookAuthProvider();
     const successAlert = () => {
         Swal.fire({
             title: 'SUCCESSFULL',
@@ -24,9 +26,15 @@ const useFirebase = () => {
     }
     const auth = getAuth();
     const googleSignIn = () => {
-        return signInWithPopup(auth, googleProvider)
+        setIsLoading(true);
+        return signInWithPopup(auth, googleProvider);
 
     };
+
+    const facebookSignIn = () => {
+        setIsLoading(true);
+        return (signInWithPopup(auth, facebookProvider))
+    }
 
     const setUserName = (name) => {
         updateProfile(auth.currentUser, { displayName: name })
@@ -34,6 +42,7 @@ const useFirebase = () => {
     }
 
     const createUser = (email, pass, name) => {
+        setIsLoading(true)
         createUserWithEmailAndPassword(auth, email, pass)
             .then(userCredential => {
                 setUser(userCredential.user)
@@ -45,10 +54,12 @@ const useFirebase = () => {
                 setError(err.message)
                 failAlert();
             })
+            .finally(() => setIsLoading(false))
     };
 
 
     const emailSignIn = (email, pass) => {
+        setIsLoading(true)
         signInWithEmailAndPassword(auth, email, pass)
             .then(res => {
                 setUser(res.user)
@@ -58,19 +69,31 @@ const useFirebase = () => {
                 setError(err.message)
                 failAlert()
             })
+            .finally(() => setIsLoading(false))
     };
 
+
     const logOut = (e) => {
+        setIsLoading(true);
         signOut(auth)
             .then(setUser({}))
             .catch(err => setError(err.message))
+            .finally(() => { setIsLoading(false) })
     }
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-            setUser(user);
-        } else {
-        }
-    });
+
+    //observer for user state change
+    useEffect(() => {
+        const unsubscribed = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user);
+            } else {
+                setUser({})
+            }
+            setIsLoading(false);
+        });
+        return () => unsubscribed;
+    }, [])
+    console.log(error);
 
     return {
         users,
@@ -80,7 +103,12 @@ const useFirebase = () => {
         setUser,
         logOut,
         setUserName,
+        setError,
         successAlert,
+        failAlert,
+        facebookSignIn,
+        setIsLoading,
+        isLoding,
         error
     }
 };

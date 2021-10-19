@@ -5,7 +5,6 @@ import useDoctors from '../../../Hooks/useDoctors';
 import useServices from '../../../Hooks/useServices';
 import Doctor from '../../Doctors/Doctor/Doctor';
 import ServiceCard from '../../Services/ServiceCard/ServiceCard';
-import Services from '../../Services/Services/Services';
 import Banner from '../Banner/Banner';
 import NewsTeller from '../NewsTeller/NewsTeller';
 import Partner from '../Partners/Partners';

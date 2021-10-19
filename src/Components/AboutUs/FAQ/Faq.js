@@ -10,49 +10,25 @@ const Faq = () => {
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>Do we provide home testing services?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum.
+                            What is Full Body Checkup? Full body check up is complete health checkup or diagnostic scan of your entire body including heart, kidney, liver, lung to assess your current health status & to screen you to know if you have any apparent warning signs or if any abnormalities lying inside your body.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
                         <Accordion.Header>Have we taken necessary steps for COVID-19?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum.
+                            What is Full Body Checkup? Full body check up is complete health checkup or diagnostic scan of your entire body including heart, kidney, liver, lung to assess your current health status & to screen you to know if you have any apparent warning signs or if any abnormalities lying inside your body.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="2">
                         <Accordion.Header>Can we send specialist at your home ?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum.
+                            The Covid-19 outbreak has adversely affected the psychological health of many people. From tiny to major crises, people need emotional and mental health support to deal with anxieties, loneliness, frustration and suicidal thoughts more than ever. Online and tele-counselling services these days are more sought out options for people with anxiety issues for a number of reasons. They can share their problems and get support while maintaining anonymity and can also maintain social distancing amid this pandemic. Here are some mental health help and support helpline where you can seek for any assistance and counselling over the phone or online.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="3">
                         <Accordion.Header>Do you have dedicated female support?</Accordion.Header>
                         <Accordion.Body>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum.
+                            The Covid-19 outbreak has adversely affected the psychological health of many people. From tiny to major crises, people need emotional and mental health support to deal with anxieties, loneliness, frustration and suicidal thoughts more than ever. Online and tele-counselling services these days are more sought out options for people with anxiety issues for a number of reasons. They can share their problems and get support while maintaining anonymity and can also maintain social distancing amid this pandemic. Here are some mental health help and support helpline where you can seek for any assistance and counselling over the phone or online.
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>

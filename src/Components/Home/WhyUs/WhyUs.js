@@ -13,28 +13,28 @@ const WhyUs = () => {
                         <div className='whyus_item bg-primary text-light me-3 ms-3'>
                             <h4 className='display-3'><i className="fas fa-user-md"></i></h4>
                             <h6>Expert Doctor Team</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, totam!</p>
+                            <p>We have the best specialits of your country for your betterment!</p>
                         </div>
                     </Col>
                     <Col className='my-3'>
                         <div className='whyus_item bg-primary text-light me-3 ms-3'>
                             <h4 className='display-3'><i className="fas fa-microscope"></i></h4>
                             <h6>Digital Diagnostic</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, totam!</p>
+                            <p>We are equiped with all digital machines and technology only for you!</p>
                         </div>
                     </Col>
                     <Col className='my-3'>
                         <div className='whyus_item bg-primary text-light me-3 ms-3'>
                             <h4 className='display-3'><i className="fas fa-laptop-medical"></i></h4>
                             <h6>Online Support</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, totam!</p>
+                            <p>We have dedicated numerous numbers of doctor for online support anytime!</p>
                         </div>
                     </Col>
                     <Col className='my-3'>
                         <div className='whyus_item bg-primary text-light me-3 ms-3'>
-                            <h4 className='display-3'><i className="fas fa-user-md"></i></h4>
-                            <h6>Expert Doctor Team</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, totam!</p>
+                            <h4 className='display-3'><i className="fas fa-ambulance"></i></h4>
+                            <h6>Quick Response Team</h6>
+                            <p>We have bunch of always ready people for responding in situations quickly!</p>
                         </div>
                     </Col>
                 </Row>

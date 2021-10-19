@@ -7,7 +7,7 @@ import useAuth from '../../Hooks/useAuth';
 
 const Login = () => {
     const { emailLogin, getEmail, getPass, clearInputs } = useForm();
-    const { googleSignIn, error, successAlert } = useAuth();
+    const { googleSignIn, setIsLoading, error, successAlert, facebookSignIn, setError, failAlert } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirectUrl = location.state?.from || '/home';
@@ -18,6 +18,24 @@ const Login = () => {
                 successAlert();
                 history.push(redirectUrl);
             })
+            .catch(err => {
+                setError(err.message)
+                failAlert();
+            })
+            .finally(() => setIsLoading(false))
+    }
+
+    const handlefacebookSignIn = () => {
+        facebookSignIn()
+            .then(res => {
+                successAlert();
+                history.push(redirectUrl);
+            })
+            .catch(err => {
+                setError(err.message)
+                failAlert();
+            })
+            .finally(() => setIsLoading(false))
     }
 
     return (
@@ -51,11 +69,11 @@ const Login = () => {
                         <label htmlFor="floatingPasswordCustom">Password</label>
                     </Form.Floating>
                     <Button variant='outline-primary' className='mt-3 mb-3' type='submit' onClick={clearInputs}>LOGIN <i class="fas fa-sign-in-alt"></i></Button><br />
-                    {<p>{error}</p>}
+                    <p>{error}</p>
                     <p>More Login Options</p>
                     <Button variant='outline-primary' className='mt-1' onClick={handlegoogleSignIn}><i className="fab fa-google"></i> LOGIN USING GOOGLE</Button>
                     <br />
-                    <Button variant='outline-primary' className='mt-3'><i className="fab fa-facebook"></i> LOGIN USING FACEBOOK</Button>
+                    <Button variant='outline-primary' className='mt-3' onClick={handlefacebookSignIn}><i className="fab fa-facebook"></i> LOGIN USING FACEBOOK</Button>
                     <br />
                     <Link to='/signup'><p className='mt-3'>DON'T HAVE AN ACCOUNT? CREATE A FREE ACCOUNT NOW</p></Link>
                 </Form>

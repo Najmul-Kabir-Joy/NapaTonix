@@ -9,12 +9,11 @@ import Home from './Components/Home/Home/Home';
 import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Profile from './Components/Profile/Profile';
 import ServiceDetails from './Components/Services/ServiceDetails/ServiceDetails';
 import Services from './Components/Services/Services/Services';
 import SignUp from './Components/SignUp/SignUp';
 import Topbar from './Components/Topbar/Topbar';
-
-
 function App() {
   return (
     <div className="App">
@@ -48,6 +47,9 @@ function App() {
             </Route>
             <Route path='/signup'>
               <SignUp></SignUp>
+            </Route>
+            <Route path='/profile'>
+              <Profile></Profile>
             </Route>
             <Route path='*'>
               <NotFound></NotFound>

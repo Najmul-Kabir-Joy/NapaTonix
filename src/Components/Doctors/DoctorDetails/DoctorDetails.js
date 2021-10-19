@@ -18,13 +18,13 @@ const DoctorDetails = () => {
     return (
         <div>
             <h1 className='my-5'>About {matched?.doctor_name}</h1>
-            <Container className='m-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <Row xs={1} md={3} className="g-4">
-                    <Link to='/doctors'><i className="fas fa-hand-point-left "></i> back</Link>
-
-                    <Col>
-                        <br />
-                        <img src={matched?.doctor_img} alt="" />
+            <Link to='/doctors' className='text-start'><i className="fas fa-hand-point-left "></i> back</Link>
+            <Container className='' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '99%' }}>
+                <Row xs={1} md={3} className="g-4 text-center">
+                    <Col className='text-end sm-text-start'>
+                        <div>
+                            <img src={matched?.doctor_img} alt="" className='img-fluid' />
+                        </div>
                     </Col>
                     <Col className='text-start' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div>

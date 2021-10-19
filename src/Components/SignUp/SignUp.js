@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../Hooks/useFirebase';
+import useAuth from '../../Hooks/useAuth';
 import useForm from '../../Hooks/useForm';
 
 const SignUp = () => {
     const { getEmail, getPass, getName, handleRegistration, clearInputs } = useForm();
-    const { googleSignIn, error } = useFirebase();
+    const { googleSignIn, error, facebookSignIn } = useAuth();
     return (
         <div>
             <Container className='lg-p-5 sm-p-0 my-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -52,7 +52,7 @@ const SignUp = () => {
                         <p>More Signup Options</p>
                         <Button variant='outline-primary' className='mt-1' onClick={googleSignIn}><i className="fab fa-google"></i> SIGNUP USING GOOGLE</Button>
                         <br />
-                        <Button variant='outline-primary' className='mt-3'><i className="fab fa-facebook"></i> SIGNUP USING FACEBOOK</Button>
+                        <Button variant='outline-primary' className='mt-3' onClick={facebookSignIn}><i className="fab fa-facebook"></i> SIGNUP USING FACEBOOK</Button>
                         <br />
                         <Link to='/login'><p className='mt-3'>ALREADY HAVE AN ACCOUNT? TRY LOGIN NOW</p></Link>
                     </Form>

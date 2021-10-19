@@ -31,7 +31,7 @@ const AboutUs = () => {
                         <Row className='my-5' lg={2} md={1} xs={1}>
                             <Col className='aboutus-text'>
                                 <h3>Quality service at Affordable Cost</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugit in libero quo laborum? Et labore consequatur amet, excepturi ut odit provident cum reprehenderit numquam incidunt ullam laborum quod vel quidem nostrum eum maxime. Accusamus rem, impedit iusto molestias ex sint consectetur accusantium saepe sit eum omnis facere culpa expedita.</p>
+                                <p>One of the many challenges in today’s healthcare system is quality service, made available at an affordable cost. In this year we will also be focussing on investing in training and development of human resource. A smart and mature team is the backbone of any organization. We want our team to grow with us. Many members of our team are with us since the inception phase and have contributed all these years in our progress. We are providing value-based education and training to our team and their families. Empowering the team with crucial decision-making rights and pushing them to perform at higher levels, reveal their inner strengths and capabilities.</p>
                             </Col>
                             <Col className="about-img">
                                 <img src={about5} alt="" height="450" width="85%" />
@@ -43,13 +43,13 @@ const AboutUs = () => {
                             </Col>
                             <Col className='aboutus-text'>
                                 <h3>Top Specialist</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugit in libero quo laborum? Et labore consequatur amet, excepturi ut odit provident cum reprehenderit numquam incidunt ullam laborum quod vel quidem nostrum eum maxime. Accusamus rem, impedit iusto molestias ex sint consectetur accusantium saepe sit eum omnis facere culpa expedita.</p>
+                                <p>Specialist is defined as an expert in some field or a person who concentrates his or her energies on a specific field. A doctor who focuses on care of the heart is an example of a heart specialist. Any of several noncommissioned ranks in the US Army that correspond to that of corporal through sergeant first class</p>
                             </Col>
                         </Row>
                         <Row className='my-5' lg={2} md={1} xs={1}>
                             <Col className='aboutus-text'>
                                 <h3>Online Counselling</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In delectus laudantium aperiam, ab consequatur inventore ipsum beatae qui ipsa nihil esse, tempora eligendi distinctio necessitatibus asperiores ullam accusantium recusandae nobis corporis quasi. Repellendus ut ipsam quisquam, excepturi fugit, doloremque laudantium accusamus, aperiam quasi reprehenderit culpa ullam laborum neque quod. Magnam, quo!</p>
+                                <p>The Covid-19 outbreak has adversely affected the psychological health of many people. From tiny to major crises, people need emotional and mental health support to deal with anxieties, loneliness, frustration and suicidal thoughts more than ever. Online and tele-counselling services these days are more sought out options for people with anxiety issues for a number of reasons. They can share their problems and get support while maintaining anonymity and can also maintain social distancing amid this pandemic. Here are some mental health help and support helpline where you can seek for any assistance and counselling over the phone or online.</p>
                             </Col>
                             <Col className="about-img">
                                 <img src={about2} alt="" height="450" width="85%" />
@@ -61,13 +61,13 @@ const AboutUs = () => {
                             </Col>
                             <Col className='aboutus-text'>
                                 <h3>Friendly Doctors</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente perspiciatis ad tempore ea. Cupiditate rerum iste tempore nobis quas recusandae iusto fugit sit quo error nesciunt at numquam eius pariatur accusantium veritatis praesentium enim aliquam, eligendi fugiat labore animi laudantium dolor? Sint dolorum exercitationem dolor quam doloremque dolore. Rem, dolorum.</p>
+                                <p>Friendly, describes people who are kind, caring, and make you feel comfortable. You might be new to town, but the people are so friendly that you'll soon feel right at home. The noun friend is at the root of the adjective friendly. When you're friendly, you treat everyone like a friend — with warmth and respect.</p>
                             </Col>
                         </Row>
                         <Row className='my-5' lg={2} md={1} xs={1}>
                             <Col className='aboutus-text'>
                                 <h3>Complete Checkup</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facilis illo modi ipsa! Officia dolores reprehenderit eius quisquam? Delectus numquam perspiciatis dolorem est quis officiis non odit tempore ex qui, asperiores hic iusto alias exercitationem amet veritatis voluptatum! Voluptatibus illum ipsa beatae dolorum nostrum sequi ducimus quis cupiditate sed aspernatur?</p>
+                                <p>What is Full Body Checkup? Full body check up is complete health checkup or diagnostic scan of your entire body including heart, kidney, liver, lung to assess your current health status & to screen you to know if you have any apparent warning signs or if any abnormalities lying inside your body.</p>
                             </Col>
                             <Col className="about-img">
                                 <img src={about4} alt="" height="450" width="85%" />

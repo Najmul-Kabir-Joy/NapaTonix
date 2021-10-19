@@ -18,12 +18,12 @@ const Topbar = () => {
                         <Link to='/services' style={{ textDecoration: 'none' }}><Nav.Link href="#services">SERVICES</Nav.Link></Link>
                         <Link to='/doctors' style={{ textDecoration: 'none' }}><Nav.Link href="#doctors">OUR DOCTORS</Nav.Link></Link>
                         {
-                            users.email && <img src={users.photoURL} alt="" height="30px" style={{ borderRadius: '50%', marginTop: '5px' }} />
+                            users.email && <div><img src={users.photoURL} alt="" height="30px" style={{ borderRadius: '50%', marginTop: '5px' }} /></div>
                         }
                         {
                             users.email &&
                             <NavDropdown title={users.displayName} id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">View Profile</NavDropdown.Item>
+                                <Link to='./profile'><NavDropdown.Item href="#profile">View Profile</NavDropdown.Item></Link>
                                 <Link to='./home'><NavDropdown.Item href="#home" onClick={logOut}>Logout</NavDropdown.Item></Link>
                             </NavDropdown>
                         }
