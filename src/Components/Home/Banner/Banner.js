@@ -8,7 +8,7 @@ const Banner = () => {
     return (
         <div>
             <Carousel fade>
-                {/* <Carousel.Item>
+                <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={bannerImgOne}
@@ -19,7 +19,7 @@ const Banner = () => {
                         <h3>Digital Equiments</h3>
                         <p>We are the first one to bring highly digital performed medical equipments</p>
                     </Carousel.Caption>
-                </Carousel.Item> */}
+                </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -33,7 +33,7 @@ const Banner = () => {
                         <p>We have the best Specialized support team for our patients.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                {/* <Carousel.Item>
+                <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={bannerImgThree}
@@ -44,7 +44,7 @@ const Banner = () => {
                         <h3>Quick Ambulance</h3>
                         <p>Our ambulance service ready to quicky response and is waiting for your call.</p>
                     </Carousel.Caption>
-                </Carousel.Item> */}
+                </Carousel.Item>
             </Carousel>
         </div>
     );

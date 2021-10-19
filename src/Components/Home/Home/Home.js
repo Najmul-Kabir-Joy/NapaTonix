@@ -16,7 +16,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Container className='my-5'>
+            <Container className='my-4'>
                 <h1 className='mb-5'>OUR SERVICES</h1>
                 <Row xs={1} md={3} className="g-5">
                     {

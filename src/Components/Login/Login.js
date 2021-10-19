@@ -5,12 +5,14 @@ import useForm from '../../Hooks/useForm';
 import { useHistory, useLocation } from 'react-router-dom'
 import useAuth from '../../Hooks/useAuth';
 
+
 const Login = () => {
     const { emailLogin, getEmail, getPass, clearInputs } = useForm();
     const { googleSignIn, setIsLoading, error, successAlert, facebookSignIn, setError, failAlert } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirectUrl = location.state?.from || '/home';
+
 
     const handlegoogleSignIn = () => {
         googleSignIn()
@@ -37,7 +39,6 @@ const Login = () => {
             })
             .finally(() => setIsLoading(false))
     }
-
     return (
         <Container className='lg-p-5 sm-p-0 my-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <div className='lg-w-75 sm-w-100 bg-light p-5 mt-5' style={{ boxShadow: ' 0px 0px 180px 10px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19)' }}>
@@ -57,6 +58,7 @@ const Login = () => {
                             placeholder="name@example.com"
                             onBlur={getEmail}
                         />
+
                         <label htmlFor="floatingInputCustom">Email address</label>
                     </Form.Floating>
                     <Form.Floating>
@@ -69,7 +71,7 @@ const Login = () => {
                         <label htmlFor="floatingPasswordCustom">Password</label>
                     </Form.Floating>
                     <Button variant='outline-primary' className='mt-3 mb-3' type='submit' onClick={clearInputs}>LOGIN <i class="fas fa-sign-in-alt"></i></Button><br />
-                    <p>{error}</p>
+                    <p className='text-danger' id='showError'></p>
                     <p>More Login Options</p>
                     <Button variant='outline-primary' className='mt-1' onClick={handlegoogleSignIn}><i className="fab fa-google"></i> LOGIN USING GOOGLE</Button>
                     <br />

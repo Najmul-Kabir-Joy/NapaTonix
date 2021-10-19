@@ -93,7 +93,11 @@ const useFirebase = () => {
         });
         return () => unsubscribed;
     }, [])
-    console.log(error);
+
+    if (error) {
+        document.getElementById('showError').innerText = error.slice(9);
+    }
+
 
     return {
         users,
@@ -109,7 +113,6 @@ const useFirebase = () => {
         facebookSignIn,
         setIsLoading,
         isLoding,
-        error
     }
 };
 
