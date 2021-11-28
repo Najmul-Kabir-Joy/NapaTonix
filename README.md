@@ -2,6 +2,18 @@
 #### A simple "HOSPITAL" related site. 
 
 [**Live Link**](https://napatonix.web.app/home)
+
+**NapaTonix is a Single Page Application. This represents a hopital landing page scenario. In this site a viewer can perform the following activities.**
+
+* Know About NapaTonix
+* About their services
+* Service list
+* Doctor list
+* Service details 
+* Doctors details
+* Login or signup as a user 
+* Subscribing to newsletter
+
 #### Technologies used here
 - _React-Bootstrap-Components_
 - _Bootstrap-classes_
@@ -27,15 +39,6 @@
 * _Creation of multiple accounts with the same email address_
 
 
-**NapaTonix is a Single Page Application. This represents a hopital landing page scenario. In this site a viewer can perform the following activities.**
-
-* Know About NapaTonix
-* About their services 
-* Doctor list
-* Service details 
-* Doctors details
-* Login or signup as a user 
-* Subscribing to newsletter
 
 **Details about the pages**
 
